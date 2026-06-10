@@ -1,0 +1,8 @@
+services:
+  lab:
+    build: ./lab
+    container_name: marshal-lab
+    ports:
+      - "127.0.0.1:3000:3000"
+    volumes:
+      - ./exploit:/exploit:ro

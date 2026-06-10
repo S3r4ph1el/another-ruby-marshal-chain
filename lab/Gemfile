@@ -1,0 +1,10 @@
+source 'https://rubygems.org'
+ruby '4.0.5'
+
+gem 'rack',            '~> 3.0'
+gem 'rackup',          '~> 2.1'
+gem 'puma',            '~> 6.4'
+gem 'sprockets',       '~> 4.2'
+gem 'activesupport',   '~> 8.1'
+gem 'erb',             '~> 6.0.4'   # latest erb, CVE-2026-41316-patched — chain fires anyway
+gem 'ostruct'                       # left Ruby's default gems in 4.0; the 5-gadget vector needs it
